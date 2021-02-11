@@ -1,0 +1,35 @@
+{
+  "name": "testprepp",
+  "version": "1.0.0",
+  "description": "Setup basic things like Eslint, prettier, formating on save, typescript, ci/cd, changelog etc",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "_node": "node -r ts-node/register -r tsconfig-paths/register",
+    "compile": "tsc -p tsconfig.build.json",
+    "compile:watch": "npm run compile -- \"-w\"",
+    "lint": "eslint . --ignore-path .eslintignore --ext .ts,.js",
+    "lint:fix": "npm run lint -- --fix",
+    "prettier": "prettier -c src",
+    "prettier:fix": "npm run prettier -- --write",
+    "format": "npm run prettier:fix && npm run lint:fix",
+    "version": "npm run _node -- .github/scripts/versionCheck.js"
+  },
+  "dependencies": {
+    "child-process": "^1.0.2",
+    "tsconfig-paths": "^3.9.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.14.2",
+    "@typescript-eslint/parser": "^4.14.2",
+    "eslint": "^7.19.0",
+    "eslint-config-airbnb-typescript": "^12.3.1",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "prettier": "^2.2.1",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  },
+  "author": "dbads",
+  "license": "ISC"
+}
