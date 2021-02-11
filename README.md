@@ -5,6 +5,7 @@
 
 - clone the repo `git clone git@github.com:dbads/node-app-setup.git`
 - install dependencies `yarn install`
+- you can start building on top of this setup, by default all the code in src folder will be using the configuration, modify paths in ts/es configurations according to your structure
 
 ### Features
 
