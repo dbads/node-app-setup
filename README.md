@@ -37,4 +37,4 @@
 
 - add a new pr to `dev` branch, I will review it and merge if looks good.
 
-#### Feel free to reach to me at <a href="mailto:deepakbharti@mnnit.ac.in"> deepakbharti@mnnit.ac.in </a> for any queries.
+#### Feel free to reach out to me at <a href="mailto:deepakbharti@mnnit.ac.in"> deepakbharti@mnnit.ac.in </a> for any queries.
