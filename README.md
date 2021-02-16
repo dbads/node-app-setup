@@ -1,5 +1,5 @@
 ## Node-app-setup
-  Boilerplate code for setting basic stuff like eslint, typescript, changelog, tests, editor configuration for auto format on save, standard extensions etc
+  Boilerplate code for setting basic stuff like eslint, typescript, changelog, tests, editor configuration for auto format on save, standard extensions etc. If you are using a framework you might get most of it already setup but not then this may help you a lot.
 
 ### Setup
 
