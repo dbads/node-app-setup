@@ -1,0 +1,50 @@
+{
+  "files.trimTrailingWhitespace": true,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.probe": ["javascript", "typescript", "html", "markdown", "json"],
+  "eslint.validate": ["json", "javascript", "typescript"],
+  "javascript.validate.enable": true,
+  "[javascript]": {
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": ["source.formatDocument", "source.fixAll.eslint"]
+  },
+  "[typescript]": {
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": ["source.formatDocument", "source.fixAll.eslint"]
+  },
+  "[json]": {
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": ["source.formatDocument", "source.fixAll.eslint"]
+  },
+  "search.exclude": {
+    // specify paths to exclude from search
+    "migrations/seed/dump": true
+  },
+  "todo-tree.general.tags": ["TODO", "HACK", "FIXME", "BUG", "NOTE"],
+  "todo-tree.highlights.defaultHighlight": {
+    "type": "line"
+  },
+  "todo-tree.highlights.customHighlight": {
+    "TODO": {
+      "icon": "check",
+      "foreground": "yellow"
+    },
+    "FIXME": {
+      "foreground": "red",
+      "iconColour": "red",
+      "gutterIcon": true
+    },
+    "NOTE": {
+      "foreground": "green"
+    }
+  },
+  "json.schemas": [
+    {
+      "fileMatch": ["test/api/data/**/*.json"],
+      "url": "./node_modules/@collegedunia/newman-mocha/iterationDataSchema.json"
+    }
+  ],
+  "yaml.format.singleQuote": true
+}
