@@ -115,7 +115,7 @@ function check() {
     updatedChangelog += changelogFile.slice(deployNotesStart, unreleasedLinkStart);
   }
 
-  const versionCompare = (from, to) =>
+  const versionCompare = (from, to=null) =>
     `https://github.com/dbads/node-app-setup/compare/v${from}...${to ? `v${to}` : 'dev'}`;
 
   updatedChangelog += `: ${versionCompare(version)}\n[${version}]: ${versionCompare(
